@@ -1,10 +1,11 @@
 import React from "react";
 import "./Header.scss";
+import { NavLink } from "react-router-dom";
 import { User, LogIn, ShoppingCart } from "react-feather";
 
 const Header = () => {
   return (
-    <section className="container-header">
+    <section className="container-header animeLeft">
       <div className="container-header__wrapper">
         <a href="/" className="brand-title">
           Duck Products
@@ -12,20 +13,16 @@ const Header = () => {
         <nav className="container-navBar">
           <ul className="container-ul">
             <li className="navbar-li">
-              {" "}
-              <a href="#">Home</a>{" "}
+              <NavLink to="/">Home</NavLink>
             </li>
             <li className="navbar-li">
-              {" "}
-              <a href="#">Produtos</a>{" "}
+              <NavLink to="/produtos">Produtos</NavLink>
             </li>
             <li className="navbar-li">
-              {" "}
-              <a href="#">Sobre nós</a>{" "}
+              <NavLink to="/sobre-nos">Sobre nós</NavLink>
             </li>
             <li className="navbar-li">
-              {" "}
-              <a href="#">Contato</a>{" "}
+              <NavLink to="/contato">Contato</NavLink>
             </li>
           </ul>
         </nav>
