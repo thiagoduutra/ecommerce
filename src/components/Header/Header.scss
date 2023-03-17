@@ -1,0 +1,111 @@
+@import "../../styles/utils/variables.scss";
+
+.container-header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-gray-1;
+    padding: 20px 0;
+
+    .brand-title {
+      display: block;
+      font-size: 25px;
+      font-weight: 700;
+
+      @media (max-width: $sm-device) {
+        font-size: 20px;
+      }
+    }
+
+    .container-navBar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .container-ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .navbar-li a {
+          padding: 10px;
+          font-weight: 600;
+          transition: 0.2s;
+
+          @media (max-width: $s-device) {
+            padding: 0 5px;
+          }
+
+          @media (max-width: $sm-device) {
+            padding: 0;
+          }
+
+          &:hover {
+            color: $color-gray-2;
+          }
+        }
+        @media (max-width: $m-device) {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+
+        @media (max-width: $s-device) {
+          font-size: 16px;
+          padding: 0;
+        }
+      }
+    }
+
+    .container-navBar__btns {
+      display: flex;
+      gap: 20px;
+
+      .btn-navbar {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        font-weight: 600;
+        border: 1px solid $color-black;
+        border-radius: 2px;
+        transition: 0.2s;
+
+        @media (max-width: $l-device) {
+          font-size: 0;
+          border: none;
+        }
+
+        @media (max-width: $s-device) {
+          padding: 0;
+        }
+
+        .svg-btn {
+          width: 25px;
+          margin-right: 5px;
+
+          @media (max-width: $m-device) {
+            margin-right: 0;
+          }
+        }
+
+        &:hover {
+          color: $color-gray-2;
+        }
+      }
+    }
+    @media (max-width: $m-device) {
+      position: relative;
+      font-size: 18px;
+      padding: 20px 0 30px 0;
+    }
+
+    @media (max-width: $sm-device) {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+}
