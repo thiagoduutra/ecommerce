@@ -6,6 +6,7 @@ import Main from "./components/Main/Main";
 import Produtos from "./components/Products/Products";
 import SobreNos from "./components/SobreNos/Sobre";
 import Contato from "./components/Contato/Contato";
+import Produto from "./components/Product/Product";
 import "./Styles/style.scss";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/produtos" element={<Produtos />} />
             <Route path="/sobre-nos" element={<SobreNos />} />
             <Route path="/contato" element={<Contato />} />
+            <Route path="/produto/:id" element={<Produto />} />
           </Routes>
         </div>
       </BrowserRouter>
