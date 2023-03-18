@@ -1,6 +1,7 @@
 const data = [
   {
     id: 1,
+    category: "Pão artesanal",
     name: "Pão Francês",
     price: 2.5,
     image:
@@ -8,6 +9,7 @@ const data = [
   },
   {
     id: 2,
+    category: "Pão artesanal",
     name: "Pão de Forma caseiro",
     price: 2.5,
     image:
@@ -15,6 +17,7 @@ const data = [
   },
   {
     id: 3,
+    category: "Salgado",
     name: "Croissant",
     price: 2.0,
     image:
@@ -22,13 +25,15 @@ const data = [
   },
   {
     id: 4,
+    category: "Doces variados",
     name: "Bolo de chocolate",
     price: 20.0,
     image:
-      "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=245&q=80",
+      "https://cdn0.tudoreceitas.com/pt/posts/2/9/9/bolo_de_chocolate_cremoso_5992_600.webp",
   },
   {
     id: 5,
+    category: "Doces variados",
     name: "Bolo de morango",
     price: 22.0,
     image:
@@ -36,6 +41,7 @@ const data = [
   },
   {
     id: 6,
+    category: "Doces variados",
     name: "Bolo de blueberry",
     price: 25.0,
     image:
@@ -43,6 +49,7 @@ const data = [
   },
   {
     id: 7,
+    category: "Salgado",
     name: "Pão de queijo",
     price: 7.5,
     image:
@@ -50,6 +57,7 @@ const data = [
   },
   {
     id: 8,
+    category: "Salgado",
     name: "Mini Pizza",
     price: 8.0,
     image:
@@ -57,6 +65,7 @@ const data = [
   },
   {
     id: 9,
+    category: "Salgado",
     name: "Hambúrguer",
     price: 20.0,
     image:
@@ -64,6 +73,7 @@ const data = [
   },
   {
     id: 10,
+    category: "Bebida",
     name: "Guaraviton",
     price: 5.0,
     image:
@@ -71,6 +81,7 @@ const data = [
   },
   {
     id: 11,
+    category: "Bebida",
     name: "Água sem gás",
     price: 2.5,
     image:
@@ -78,8 +89,9 @@ const data = [
   },
   {
     id: 12,
-    name: "Água sem gás",
-    price: 2.5,
+    category: "Bebida",
+    name: "Nescau",
+    price: 3.5,
     image:
       "https://cdn.lojazmart.com/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/i/m/images_52_.jpeg",
   },

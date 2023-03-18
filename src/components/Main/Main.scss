@@ -4,6 +4,14 @@
   height: calc(100vh - 76px);
   position: relative;
 
+  @media (max-width: $m-device) {
+    height: calc(100vh - 84px);
+  }
+
+  @media (max-width: $sm-device) {
+    height: calc(100vh - 108px);
+  }
+
   .card-img {
     display: block;
     width: 100%;
