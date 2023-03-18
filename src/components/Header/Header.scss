@@ -35,16 +35,16 @@
           font-weight: 600;
           transition: 0.2s;
 
+          &:hover {
+            color: $color-gray-2;
+          }
+
           @media (max-width: $s-device) {
             padding: 0 5px;
           }
 
           @media (max-width: $sm-device) {
             padding: 0;
-          }
-
-          &:hover {
-            color: $color-gray-2;
           }
         }
         @media (max-width: $m-device) {
