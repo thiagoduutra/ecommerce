@@ -1,15 +1,15 @@
 import React from "react";
 import "./Header.scss";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { User, LogIn, ShoppingCart } from "react-feather";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <section className="container-header animeLeft">
       <div className="container-header__wrapper">
-        <a href="/" className="brand-title">
-          Duck Products
-        </a>
+        <Link to="/" className="brand-title">
+          Duck Bakery
+        </Link>
         <nav className="container-navBar">
           <ul className="container-ul">
             <li className="navbar-li">
@@ -19,7 +19,7 @@ const Header = () => {
               <NavLink to="/produtos">Produtos</NavLink>
             </li>
             <li className="navbar-li">
-              <NavLink to="/sobre-nos">Sobre nós</NavLink>
+              <NavLink to="/sobre-nos">Sobre</NavLink>
             </li>
             <li className="navbar-li">
               <NavLink to="/contato">Contato</NavLink>
@@ -27,18 +27,18 @@ const Header = () => {
           </ul>
         </nav>
         <div className="container-navBar__btns">
-          <a href="" className="btn-navbar btn-Login">
+          <NavLink to="/login" className="btn-navbar btn-Login">
             <User className="svg-btn" />
             Login
-          </a>
-          <a href="" className="btn-navbar btn-Register">
+          </NavLink>
+          <NavLink to="/registrar" className="btn-navbar btn-Register">
             <LogIn className="svg-btn" />
             Registrar
-          </a>
-          <a href="" className="btn-navbar btn-Cart">
+          </NavLink>
+          <NavLink to="/cart" className="btn-navbar btn-Cart">
             <ShoppingCart className="svg-btn" />
-            Carrinho (0)
-          </a>
+            Carrinho
+          </NavLink>
         </div>
       </div>
     </section>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Header from "../Header/Header";
 import Head from "../HeadPage/Head";
 import data from "../../data/bakeryBD";
 import { Link } from "react-router-dom";
@@ -33,10 +32,9 @@ const Products = () => {
   return (
     <div className="products-area animeLeft">
       <Head title="Bakery | Produtos" description="Produtos para comprar" />
-      <Header />
       <h1 className="product-title">Produtos recém adicionados</h1>
       <div className="container-products">
-        {data.slice(0, itemsShow).map((produto) => {
+        {data.products.slice(0, itemsShow).map((produto) => {
           return (
             <div className="wrapper-products" key={produto.id}>
               <img
@@ -56,7 +54,7 @@ const Products = () => {
       </div>
 
       <div className="container-btnProducts">
-        {itemsShow < data.length && (
+        {itemsShow < data.products.length && (
           <button className="btn-products" onClick={handleMoreClick}>
             Carregar mais
           </button>

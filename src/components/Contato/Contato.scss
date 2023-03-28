@@ -1,0 +1,104 @@
+@import "../../styles/utils/variables.scss";
+
+.container-contato {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: $m-device) {
+    grid-template-columns: 1fr;
+  }
+
+  .img-contato {
+    display: block;
+    height: calc(100vh - 76px);
+    object-fit: cover;
+    width: 80%;
+    margin: 0 auto;
+
+    @media (max-width: $m-device) {
+      width: 100%;
+      height: 245px;
+      object-fit: cover;
+    }
+  }
+
+  .container-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    @media (max-width: $l-device) {
+      width: 100%;
+    }
+
+    .descrip-title {
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 20px;
+
+      @media (max-width: $l-device) {
+        font-size: 35px;
+      }
+
+      @media (max-width: $m-device) {
+        font-size: 25px;
+        margin: 10px;
+      }
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      border-left: 2px solid $color-black;
+      border-top: 2px solid $color-black;
+      gap: 10px;
+      padding: 20px 20px 70px 20px;
+
+      @media (max-width: $l-device) {
+        margin: 0 20px;
+      }
+
+      @media (max-width: $m-device) {
+        margin: 0 20px;
+      }
+
+      .label-form {
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+
+      .input-form {
+        width: 80%;
+        padding: 5px;
+        outline: none;
+        font-size: 16px;
+        margin-bottom: 10px;
+
+        @media (max-width: $l-device) {
+          width: 100%;
+        }
+      }
+
+      .container-btnContato {
+        max-width: 50%;
+
+        .btn-input {
+          width: 50%;
+          padding: 10px;
+          cursor: pointer;
+          border: none;
+          border-radius: 5px;
+          font-size: 18px;
+          transition: 0.3s;
+          background-color: $color-gray-4;
+
+          &:hover,
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px $color-yellow-1, 0 0 0 4px $color-yellow-2;
+          }
+        }
+      }
+    }
+  }
+}
