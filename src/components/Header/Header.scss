@@ -31,12 +31,24 @@
         gap: 20px;
 
         .navbar-li a {
+          position: relative;
           padding: 10px;
           font-weight: 600;
           transition: 0.2s;
 
-          &:hover {
-            color: $color-gray-2;
+          &::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 0;
+            background: $color-black;
+            margin-top: 2px;
+            transition: 0.3s;
+            position: absolute;
+          }
+
+          &:hover:after {
+            width: 100%;
           }
 
           @media (max-width: $s-device) {
@@ -79,10 +91,6 @@
           border: none;
         }
 
-        @media (max-width: $s-device) {
-          padding: 0;
-        }
-
         .svg-btn {
           width: 25px;
           margin-right: 5px;
@@ -94,6 +102,18 @@
 
         &:hover {
           color: $color-gray-2;
+        }
+      }
+
+      .btn-Cart {
+        position: relative;
+
+        .count-cart {
+          position: absolute;
+          top: 0px;
+          right: 0;
+          padding: 3px;
+          color: red;
         }
       }
     }
